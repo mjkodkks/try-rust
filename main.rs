@@ -5,7 +5,7 @@ fn main() {
     println!("Guess the number!");
 
     let secret_number = rand::thread_rng().gen_range(1..=100);
-    let masked: String = secret_number.to_string().chars().map(|x| '*').collect();
+    let masked: String = secret_number.to_string().chars().map(|_x| '*').collect();
     println!("The secret number is: {masked}");
 
     let mut round = 1;
